@@ -1,0 +1,45 @@
+<form class="card card-body" #form="ngForm" (ngSubmit)="login(form)">
+    <div class="txt">
+        <h2>Login here</h2>
+    </div>
+
+    <div class="container">
+        <label for="email"><b>User Id</b></label><br>
+        <input type="email" placeholder="Enter Username" name="email" placeholder="Enter your email" #email="ngModel" ngModel required><br>
+
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="password" placeholder="Enter your password" #password="ngModel" ngModel required><br>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="mydiv">
+            <button type="submit" class="btn btn-warning float-left" data-toggle="modal" data-target="#exampleModal">Forget password</button>
+        </div>
+
+
+    </div>
+</form>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <form #form="ngForm" (ngSubmit)="change(form)">
+                    <input type="" name="oldPassword" id="oldPassword" placeholder="Enter your old password" #oldPassword="ngModel" ngModel required><br><br>
+                    <input type="" name="newPassword" id="newPassword" placeholder="Enter your new password" #oldPassword="ngModel" ngModel required><br><br>
+                    <button class="btn-primary btn">Change</button>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -8,9 +8,9 @@
             <th scope="col">Delete</th>
         </tr>
         <tr>
-            <th>xyz@jhj.com</th>
-            <th>4</th>
-            <th>hfhfhfh</th>
+            <th>{{res.mid}}</th>
+            <th>{{res.uid}}</th>
+            <th>{{res.subject}}</th>
             <th><button class=" btn btn-primary" data-toggle="modal" data-target="#exampleModal">View</button></th>
             <th><button class="btn btn-danger">Delete</button></th>
         </tr>
@@ -32,10 +32,7 @@
             </div>
             <div class="modal-body">
                 <pre>
-                   hgdhgfhg
-                   fndskfhjdsf
-                   djbcjdsfjsd
-                   kdjdfhdsjfhj
+                   {{res.message}}
                </pre>
             </div>
             <div class="modal-footer">

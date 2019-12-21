@@ -1,0 +1,27 @@
+<form class="card card-body" #form="ngForm" (ngSubmit)="register(form)">
+    <div class="txt">
+        <h2>Register hear</h2>
+    </div>
+
+    <div class="container">
+        <label for="uid"><b>User Id</b></label><br>
+        <input type="number" name="uid" placeholder="Enter your user id" #uid="ngModel" ngModel required><br>
+
+        <label for="userName"><b>User Name</b></label><br>
+        <input type="text" name="ugserName" placeholder="Enter your user Name" #userName="ngModel" ngModel required><br>
+
+        <label for="email"><b>Email</b></label><br>
+        <input type="email" name="email" placeholder="Enter your email id" #email="ngModel" ngModel required><br>
+
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="password" placeholder="Enter your password" #password="ngModel" ngModel required><br>
+
+        <label for="confirmPassword"><b>Confirm Password</b></label><br>
+        <input type="password" placeholder="confirm your Password" name="confirmPassword" #confirmPassword="ngModel" ngModel required><br>
+
+
+
+        <button type="submit" class="btn btn-primary">Register</button>
+
+    </div>
+</form>

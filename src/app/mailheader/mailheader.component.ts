@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mailheader',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MailheaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+  isLoggedin(): boolean {
+    const userDetail = JSON.parse(localStorage.getItem('userdetail'));
+    if (userDetail) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  logout() {
+    localStorage.removeItem('userdetail');
+    this.router.navigateByUrl('');
+  }
 
   ngOnInit() {
   }

@@ -1,0 +1,31 @@
+form {
+    border: 1px solid #f1f1f1;
+}
+
+input[type=number],
+input[type=password],
+input[type=text],
+input[type=email] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+.txt {
+    text-align: center;
+}
+
+.container {
+    margin-left: 450px;
+}

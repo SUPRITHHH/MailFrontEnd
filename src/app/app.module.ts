@@ -8,6 +8,8 @@ import { InboxComponent } from './inbox/inbox.component';
 import { ComposeComponent } from './compose/compose.component';
 import { DraftComponent } from './draft/draft.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LogincomponentComponent } from './logincomponent/logincomponent.component';
+import { SignupcomponentComponent } from './signupcomponent/signupcomponent.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     InboxComponent,
     ComposeComponent,
     DraftComponent,
+    LogincomponentComponent,
+    SignupcomponentComponent,
   ],
   imports: [
     BrowserModule,
